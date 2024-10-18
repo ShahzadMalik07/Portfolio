@@ -2,11 +2,13 @@
 import { motion } from "framer-motion"
 import react, { useState } from "react"
 import { BsArrowUpRight, BsGithub } from "react-icons/bs"
+import Image from "next/image"
 
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "../components/ui/tooltip"
 import Link from "next/link"
 import { Swiper, SwiperSlide } from "swiper/react"
 import "swiper/css"
+import Mybtns from "../components/Mybtns"
 
 const projects = [
   {
@@ -15,7 +17,7 @@ const projects = [
     category: "Frontend",
     description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt sit minus labore asperiores repellat quos.",
     stack: [{ name: "HTML5" }, { name: "Css 3" }, { name: "javascript" }],
-    image: "../public/thumb1.png",
+    image: "/thumb1.png",
     live: "",
     github: ""
   },
@@ -25,7 +27,7 @@ const projects = [
     category: "Frontend",
     description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt sit minus labore asperiores repellat quos.",
     stack: [{ name: "HTML5" }, { name: "Css 3" }, { name: "javascript" }],
-    image: "../public/thumb2.png",
+    image: "/thumb2.png",
     live: "",
     github: ""
   },
@@ -35,7 +37,7 @@ const projects = [
     category: "Frontend",
     description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt sit minus labore asperiores repellat quos.",
     stack: [{ name: "HTML5" }, { name: "Css 3" }, { name: "javascript" }],
-    image: "../public/thumb3.png",
+    image: "/thumb3.png",
     live: "",
     github: ""
   }
@@ -98,16 +100,26 @@ const Work = () => {
               </div>
             </div>
           </div>
-          <div className="w-[50%]">
+          <div className="w-[50%] h-full">
             <Swiper spaceBetween={30}
               slidesPerView={1}
-              className="h-[512px] mb-4"
+              className="h-[512px]"
               onSlideChange={handleSlide}>
               {projects.map((item, index) => {
                 return <SwiperSlide key={index} className="w-full">
-                  <div className="h-[450px] relative group flex items-center justify-center bg-gray-300"></div>
-                  </SwiperSlide>
+                  <div className="h-[400px] relative group flex items-center justify-center bg-gray-300">
+                    <div className="absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
+                    <div className="h-full w-full relative">
+                      <Image quality={100} src={project.image} alt="image" fill className="object-cover" />
+
+                    </div>
+                  </div>
+                </SwiperSlide>
+
               })}
+              
+
+
             </Swiper>
           </div>
         </div>
