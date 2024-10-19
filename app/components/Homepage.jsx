@@ -2,6 +2,7 @@ import { FiDownload } from "react-icons/fi"
 import Socialicons from "./Socialicons"
 import Photo from "./Photo"
 import Stats from "./Stats"
+import Link from "next/link"
 const Homepage = () => {
     return (
         <>
@@ -15,7 +16,10 @@ const Homepage = () => {
                         <span className="text-6xl mb-3 tracking-wider text-blue-500">Shahzad Malik</span>
                         <h5 className="w-[65%] text-md">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti suscipit delectus, reprehenderit sequi neque alias!</h5>
                         <div className="mt-8 flex gap-8 items-center">
-                            <button className="bg-transparent px-10 py-2 border border-blue-500 rounded-full text-blue-500 flex items-center space-x-2  hover:bg-blue-500 hover:text-black hover:transition-all duration-500"><span>Download CV</span><FiDownload /></button>
+                            <Link download href={"/resume.pdf"} >   <button className="bg-transparent px-10 py-2 border border-blue-500 rounded-full text-blue-500 flex items-center space-x-2  hover:bg-blue-500 hover:text-black hover:transition-all duration-500"><span>Download CV</span><FiDownload /></button> </Link>
+
+
+
                             <div><Socialicons iconstyle="h-8 w-9 border border-blue-500 text-blue-500 rounded-full flex items-center justify-center hover:bg-blue-500 hover:text-black hover:transition-all duration-500 text-base" /></div>
                         </div>
                     </div>
