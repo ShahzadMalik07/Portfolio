@@ -10,10 +10,10 @@ const items = [
 const Stats = () => {
     return (
         <section className="
-         mt-10 
+        xl:mt-6 mt-0 xl:ml-0 ml-4
         ">
             <div className='container mx-auto pt-8'>
-                <div className='flex gap-20 items-center justify-center'>
+                <div className='flex gap-8 xl:gap-20 items-center justify-center'>
                     {items.map((item, index) => {
                         return (
                             <div key={index} className='flex items-center gap-3 justify-center'>

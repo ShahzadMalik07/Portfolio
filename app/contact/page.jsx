@@ -22,8 +22,8 @@ const Contact = () => {
       }}
     >
       <div className="container mx-auto">
-        <div className="flex flex-row gap-[40px]">
-          <div className="h-[55%]">
+        <div className="flex xl:flex-row flex-col gap-[40px]">
+          <div className="h-[55%] order-2 xl:order-none">
             <form action="" className="flex flex-col gap-6 p-10 rounded-xl bg-gray-900">
               <h3 className="text-4xl text-blue-500">Let's Work Together</h3>
               <p className="text-md max-w-[468px]">Lorem ipsum dolor sit amet consectetur asdp purfi adipisicing elit. Eveniet officia sit adipisci?</p>
@@ -50,7 +50,7 @@ const Contact = () => {
              
               </div>
               <Textarea  className="h-200px" placeholder="Type your text here."/>
-              <Button className="max-w-40">Send Message</Button>
+              <Button className="xl:max-w-40 ">Send Message</Button>
             </form>
           </div>
           <div className=" pl-8 flex-1 flex items-center justify-start">

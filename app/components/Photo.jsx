@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 const Photo = () => {
   return (
     <div className="h-full w-[40%]">
-      <div className="h-full w-full mt-8 ">
+      <div className="h-full w-full xl:mt-8 mt-0">
         <motion.div
           initial={{ opacity: 0 }}
           animate={{
