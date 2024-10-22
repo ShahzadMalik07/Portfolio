@@ -23,7 +23,11 @@ const experience = [
 ]
 
 const education = [ 
-  { }
+  {time:"2023 - 2024", course:"100x Devs Cohort", institute:"Harkirat Singh"},
+  {time:"2022 - 2023", course:"Frontend Development", institute:"Sheriyans Coding School" },
+  {time:"2021 - 2022", course:"Digital Marketing Course", institute:"Google" },
+  {time:"2017 - 2020", course:"Graduate in Pol. Science and Economics", institute:"University Of Delhi" },
+  {time:"2017 - 2017", course:"Diploma in Computer Applications", institute:"NCPUL" },
 
 ]
 
@@ -77,7 +81,7 @@ const Resume = () => {
             <TabsContent value='experience' className='w-full '>
               <div className='flex flex-col gap-[30px] text-center xl:text-left'>
                 <h3 className='text-4xl'>My Experience</h3>
-                <p className='xl:max-w-[850px]  text-white/60'>I specialize in full-stack development, working with modern frameworks like React, Next.js, and Node.js. My experience covers building user-friendly interfaces, managing databases, and creating secure, scalable web solutions for varied projects.</p>
+                <p className='xl:max-w-[850px]  text-white/60'>I am specialize in full-stack development, working with modern frameworks like React, Next.js, and Node.js. My experience covers building user-friendly interfaces, managing databases, and creating secure, scalable web solutions for varied projects.</p>
               </div>
               <ScrollArea className='h-[330px] mt-6'>
                 <ul className='grid grid-cols-1 xl:grid-cols-2 gap-5'>
@@ -107,63 +111,19 @@ const Resume = () => {
               </div>
               <ScrollArea className='h-[330px] mt-6'>
                 <ul className='grid grid-cols-1 xl:grid-cols-2 gap-5'>
-                  <li className='bg-gray-900 h-[150px] py-6 px-10 rounded-xl flex flex-col justify-center items-center gap-3'>
-                    <span className='text-blue-500'>2002 - 2020</span>
-                    <h3 className='text-xl max-w-[260px] min-h-[60px] text-center lg:text-left'>Full Stack Developer</h3>
+                  {education.map((item,index)=>{
+                    return  <li key={index} className='bg-gray-900 h-[150px] py-6 px-8 rounded-xl flex flex-col justify-center items-center gap-3'>
+                    <span className='text-blue-500'>{item.time}</span>
+                    <h3 className='text-xl max-w-[300px] min-h-[60px] text-center'>{item.course}</h3>
                     <div className='flex items-center gap-2'>
                       <span className='h-[6px] w-[6px] rounded-full bg-blue-500'></span>
-                      <p className='text-white/60'>Tech Solution Inc.</p>
+                      <p className='text-white/60'>{item.institute}</p>
                     </div>
                   </li>
+                  })}
+                 
 
-                  <li className='bg-gray-900 h-[150px] py-6 px-10 rounded-xl flex flex-col justify-center items-center gap-3'>
-                    <span>2002 - 2020</span>
-                    <h3>Full Stack Developer</h3>
-                    <div>
-                      <span></span>
-                      <p>Tech Solution Inc.</p>
-                    </div>
-                  </li>
-
-
-                  <li className='bg-gray-900 h-[150px] py-6 px-10 rounded-xl flex flex-col justify-center items-center gap-3'>
-                    <span>2002 - 2020</span>
-                    <h3>Full Stack Developer</h3>
-                    <div>
-                      <span></span>
-                      <p>Tech Solution Inc.</p>
-                    </div>
-                  </li>
-
-
-                  <li className='bg-gray-900 h-[150px] py-6 px-10 rounded-xl flex flex-col justify-center items-center gap-3'>
-                    <span>2002 - 2020</span>
-                    <h3>Full Stack Developer</h3>
-                    <div>
-                      <span></span>
-                      <p>Tech Solution Inc.</p>
-                    </div>
-                  </li>
-
-
-                  <li className='bg-gray-900 h-[150px] py-6 px-10 rounded-xl flex flex-col justify-center items-center gap-3'>
-                    <span>2002 - 2020</span>
-                    <h3>Full Stack Developer</h3>
-                    <div>
-                      <span></span>
-                      <p>Tech Solution Inc.</p>
-                    </div>
-                  </li>
-
-
-                  <li className='bg-gray-900 h-[150px] py-6 px-10 rounded-xl flex flex-col justify-center items-center gap-3'>
-                    <span>2002 - 2020</span>
-                    <h3>Full Stack Developer</h3>
-                    <div>
-                      <span></span>
-                      <p>Tech Solution Inc.</p>
-                    </div>
-                  </li>
+                 
                 </ul>
 
               </ScrollArea>
