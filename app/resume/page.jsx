@@ -103,7 +103,7 @@ const Resume = () => {
             <TabsContent value='education' className='w-full'>
               <div className='flex flex-col gap-[30px] text-center xl:text-left'>
                 <h3 className='text-4xl'>My Education</h3>
-                <p className='max-w-[850px] text-white/60'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, possimus natus? Ut odio dolorum sunt!</p>
+                {/* <p className='max-w-[850px] text-white/60'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa, possimus natus? Ut odio dolorum sunt!</p> */}
               </div>
               <ScrollArea className='h-[330px] mt-6'>
                 <ul className='grid grid-cols-1 xl:grid-cols-2 gap-5'>
