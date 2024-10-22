@@ -13,24 +13,24 @@ import Mybtns from "../components/Mybtns"
 const projects = [
   {
     num: "01",
-    title: "Frontend Project",
+    title: "Fullstack Project",
     category: "Frontend",
-    description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt sit minus labore asperiores repellat quos.",
-    stack: [{ name: "HTML5" }, { name: "Css 3" }, { name: "javascript" }],
-    image: "/thumb1.png",
-    live: "",
-    github: "",
+    description: "Medium-style blogging website project, I developed a full-stack web application using Next.js for the frontend and Node.js with PostgreSQL for the backend. The platform allows users to create, edit, and publish blog posts, featuring user authentication, a rich text editor, and dynamic content rendering with Prisma for database management.",
+    stack: [{ name: "React Js" }, { name: "Typescript" }, { name: "PostgreSQL" }, { name: "Cloudflare/Hono"},],
+    image: "/med.png",
+    live: "https://medium-blog-project-tau.vercel.app/",
+    github: "https://github.com/ShahzadMalik07/Medium-Blog-Project",
     link: true
   },
   {
     num: "02",
     title: "Frontend Project",
     category: "Frontend",
-    description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt sit minus labore asperiores repellat quos.",
-    stack: [{ name: "HTML5" }, { name: "Css 3" }, { name: "javascript" }],
-    image: "/thumb2.png",
-    live: "",
-    github: "",
+    description: "Netflix clone project, I developed a responsive frontend using React and Tailwind CSS. The application features a user-friendly interface with dynamic content fetching using TMDB API. It includes SignIn and SignUp functionality with Firebase Api, a sleek carousel for popular shows, interactive search functionality, and seamless video playback for a Netflix-like experience.",
+    stack: [{ name: "React Js" }, { name: "Tailwind" }, { name: "Redux Toolkit" }, {name:"Firebase"}],
+    image: "/net.png",
+    live: "https://netflix-gamma-pink.vercel.app/",
+    github: "https://github.com/ShahzadMalik07/Netflix--",
     link: true
   },
   {
@@ -42,7 +42,7 @@ const projects = [
     image: "/thumb3.png",
     live: "",
     github: "",
-    link: false
+    link: true
   }
 ]
 
@@ -104,17 +104,17 @@ const Work = () => {
               </div>
             </div>
           </div>
-          <div className="xl:w-[50%] w-full h-full">
+          <div className="xl:w-[50%]  w-full h-full">
             <Swiper spaceBetween={30}
               slidesPerView={1}
               className="h-[512px]"
               onSlideChange={handleSlide}>
               {projects.map((item, index) => {
                 return <SwiperSlide key={index} className="w-full">
-                  <div className="h-[400px] relative group flex items-center justify-center xl:bg-gray-300">
+                  <div className={`h-[400px] w-[550px] relative group flex items-center justify-center xl:bg-transparent`}>
                     <div className="absolute top-0 bottom-0 w-full h-full xl:bg-black/10 z-10"></div>
                     <div className="xl:h-full xl:w-full  h-[450px] w-[600px] relative">
-                      <Image quality={100} src={project.image} alt="image" fill className="xl:object-cover" />
+                      <Image quality={100} src={project.image} alt="image" fill className="xl:object-contain" />
 
                     </div>
                   </div>
