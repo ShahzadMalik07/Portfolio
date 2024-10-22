@@ -28,7 +28,7 @@ const projects = [
     category: "Frontend",
     description: "Netflix clone project, I developed a responsive frontend using React and Tailwind CSS. The application features a user-friendly interface with dynamic content fetching using TMDB API. It includes SignIn and SignUp functionality with Firebase Api, a sleek carousel for popular shows, interactive search functionality, and seamless video playback for a Netflix-like experience.",
     stack: [{ name: "React Js" }, { name: "Tailwind" }, { name: "Redux Toolkit" }, {name:"Firebase"}],
-    image: "/net.png",
+    image: "/netflix.png",
     live: "https://netflix-gamma-pink.vercel.app/",
     github: "https://github.com/ShahzadMalik07/Netflix--",
     link: true
