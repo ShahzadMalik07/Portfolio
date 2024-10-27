@@ -16,7 +16,7 @@ const Nav = () => {
         <Link href="/resume" className={`${linkStyle("/resume")} hover:text-blue-500 transition-all`}>Resume</Link>
         <Link href="/work" className={`${linkStyle("/work")} hover:text-blue-500 transition-all`}>Work</Link>
         <Link href="/contact" className={`${linkStyle("/contact")} hover:text-blue-500 transition-all`}>Contact</Link>
-        <Link href='/'><button className="px-5 py-2 bg-blue-500 rounded-full text-black font-medium">Hire me</button> </Link>
+        <Link href='/contact'><button className="px-5 py-2 bg-blue-500 rounded-full text-black font-medium">Hire me</button> </Link>
         
       
     </div>
