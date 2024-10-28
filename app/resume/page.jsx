@@ -134,7 +134,7 @@ const Resume = () => {
               <div className='flex flex-col gap-[30px]'>
                 <div className='flex flex-col text-center xl:text-start gap-[30px]'>
                   <h3 className='text-4xl font-bold'>Skills</h3>
-                  {/* <p className='max-w-[850px] text-white/60'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur temporibus ullam aperiam.</p> */}
+                  <p className='max-w-[850px] text-white/60'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur temporibus ullam aperiam.</p>
                 </div>
 
 
