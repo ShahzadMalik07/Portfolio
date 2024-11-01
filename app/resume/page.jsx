@@ -134,7 +134,7 @@ const Resume = () => {
               <div className='flex flex-col gap-[30px]'>
                 <div className='flex flex-col text-center xl:text-start gap-[30px]'>
                   <h3 className='text-4xl font-bold'>Skills</h3>
-                  <p className='max-w-[850px] text-white/60'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur temporibus ullam aperiam.</p>
+                  <p className='max-w-[850px] text-white/60'>As a skilled full-stack developer, I possess a comprehensive understanding of both front-end and back-end technologies. My expertise includes HTML, CSS, JavaScript, and frameworks or library like React for dynamic user interfaces, along with proficiency in server-side languages such as Node.js</p>
                 </div>
 
 
@@ -169,7 +169,7 @@ const Resume = () => {
               <div className='flex flex-col  gap-[30px]'>
                 <div className='flex flex-col text-center xl:text-start gap-[30px]'>
                   <h3 className='text-4xl font-bold'>About Me</h3>
-                  {/* <p className='max-w-[850px] text-white/60'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias ex voluptatibus assumenda.</p> */}
+                  
                 </div>
                 <ul className='grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[820px]'>
                  {about.map((about,index)=>{
