@@ -37,12 +37,12 @@ const projects = [
     num: "03",
     title: "FullStack Project",
     category: "Frontend",
-    description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Deserunt sit minus labore asperiores repellat quos.",
-    stack: [{ name: "HTML5" }, { name: "Css 3" }, { name: "javascript" }],
+    description: "Mini Paytm project, where User can register themselves and will get random balance, which can be transfer to any user",
+    stack: [{ name: "React Js" }, { name: "Node Js" }, { name: "MongoDb" }, {name: "Tailwind"}, {name:"Recoil"}],
     image: "/thumb3.png",
     live: "",
-    github: "",
-    link: true
+    github: "https://github.com/ShahzadMalik07/Mini-Paytm-App",
+    link: false
   }
 ]
 

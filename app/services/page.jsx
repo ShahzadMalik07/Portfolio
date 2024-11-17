@@ -27,7 +27,7 @@ const Services = () => {
           {services.map((item, index) => {
             return <div key={index} className="flex-1 flex flex-col justify-center gap-7 group">
               <div className="flex justify-between items-center group">
-                <div className="text-6xl font-extrabold group-hover:text-stroke-blue-500 text-transparent text-outline">{item.num}</div>
+                <div className="text-6xl font-extrabold hover:text-stroke-blue-500 text-transparent text-outline">{item.num}</div>
                 <Link className="w-[70px] h-[70px] rounded-full bg-white group-hover:bg-blue-500 flex justify-center items-center hover:-rotate-45 transition-all duration-500 " href={item.href}><BsArrowDownRight className="text-3xl text-black"/></Link>
               </div>
               <h2 className="text-[38px] font-bold leading-none text-white group-hover:text-blue-500 transition-all duration-500">{item.title}</h2>
