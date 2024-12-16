@@ -37,13 +37,25 @@ const projects = [
     num: "03",
     title: "FullStack Project",
     category: "Frontend",
-    description: "Mini Paytm project, where User can register themselves and will get random balance, which can be transfer to any user",
+    description: "A mini Paytm-like project where a user can send and receive money in their  account. It includes a Dashboard page where the user can view their available balance and search for any user they want to send money to. The balance is automatically credited at the time of signup. This project also includes user authentication with SignUp and SignIn functionality. It also includes some engaging animations on the SignIn and SignUp form pages. ",
     stack: [{ name: "React Js" }, { name: "Node Js" }, { name: "MongoDb" }, {name: "Tailwind"}, {name:"Recoil"}],
-    image: "/thumb3.png",
+    image: "/project 3.png",
     live: "",
     github: "https://github.com/ShahzadMalik07/Mini-Paytm-App",
     link: false
-  }
+  },
+  {
+    num: "04",
+    title: "Next Js FullStack Project",
+    category: "Fullstack",
+    description: "I developed an anonymous messaging website using Next.js, featuring email OTP verification for secure user registration. Each user receives a unique profile link, allowing others to send them anonymous messages. The platform includes a dashboard where users can toggle message acceptance, view message cards, delete messages, and leverage AI-powered suggestions for crafting messages. These features, combined with a seamless interface, offer an engaging and interactive experience for anonymous communication",
+    stack: [{ name: "NextJs" }, { name: "TypeScript" }, { name: "MongoDb" }, {name: "AI"}, {name:"Shadcn/ui"},{name:"Resend/Email"}],
+    image: "/project 3.png",
+    live: "https://anonymous-message-fsngglnss-shahzadmalik07s-projects.vercel.app/",
+    github: "https://github.com/ShahzadMalik07/Anonymous-Message-App",
+    link: true
+  },
+
 ]
 
 
@@ -75,7 +87,8 @@ const Work = () => {
               <div className="border border-white/20">
               </div>
               <div className="flex gap-4">
-              {project.link?  <Link href={project.live}>
+              {project.link?  <Link href={project.live} target="_blank" rel="noopener noreferrer">
+              
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="h-[70px] w-[70px] rounded-full bg-gray-900 group flex items-center justify-center">
@@ -88,7 +101,7 @@ const Work = () => {
                   </TooltipProvider>
                 </Link> :""}
 
-                <Link href={project.github}>
+                <Link href={project.github} target="_blank" rel="noopener noreferrer">
                   <TooltipProvider delayDuration={100}>
                     <Tooltip>
                       <TooltipTrigger className="h-[70px] w-[70px] rounded-full bg-gray-900 group flex items-center justify-center">
