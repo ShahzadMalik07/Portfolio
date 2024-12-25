@@ -55,6 +55,17 @@ const projects = [
     github: "https://github.com/ShahzadMalik07/Anonymous-Message-App",
     link: true
   },
+  {
+    num: "05",
+    title: "Ract Js Frontend Project",
+    category: "Frontend",
+    description: "I developed an anonymous messaging website using Next.js, featuring email OTP verification for secure user registration. Each user receives a unique profile link, allowing others to send them anonymous messages. The platform includes a dashboard where users can toggle message acceptance, view message cards, delete messages, and leverage AI-powered suggestions for crafting messages. These features, combined with a seamless interface, offer an engaging and interactive experience for anonymous communication",
+    stack: [{ name: "NextJs" }, { name: "TypeScript" }, { name: "MongoDb" }, {name: "AI"}, {name:"Shadcn/ui"},{name:"Resend/Email"}],
+    image: "/Ama.png",
+    live: "https://anonymous-message-fsngglnss-shahzadmalik07s-projects.vercel.app/",
+    github: "https://github.com/ShahzadMalik07/Anonymous-Message-App",
+    link: true
+  },
 
 ]
 
