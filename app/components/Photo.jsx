@@ -4,7 +4,7 @@ import Image from "next/image"
 import { motion } from "framer-motion"
 const Photo = () => {
   return (
-    <div className="h-full w-[40%]">
+    <div className="h-full w-[45%]">
       <div className="h-full w-full xl:mt-8 mt-0">
         <motion.div
           initial={{ opacity: 0 }}
@@ -15,6 +15,7 @@ const Photo = () => {
 
         />
         <motion.div
+
           initial={{ opacity: 0 }}
           animate={{
             opacity: 1,
@@ -23,8 +24,12 @@ const Photo = () => {
 
 
 
-          className="mix-blend-lighten">
-          <Image src="/photo.png" alt="" width={300} height={300} className="object-contain rounded-full bg-blue-500" />
+          className="mix-blend-lighten ">
+          <div className=""> <Image src="/myPhoto.png" alt="" width={340} height={300} quality={100} className=" relative rounded-3xl " ></Image>
+            <div className="h-[359px] w-[346px] border-8 border-blue-400 rounded-3xl absolute -top-4 left-0 bg-transparent"  ></div>
+          </div>
+
+
         </motion.div>
       </div>
     </div>
