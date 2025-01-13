@@ -26,7 +26,7 @@ const Photo = () => {
 
           className="mix-blend-lighten ">
           <div className=""> <Image src="/myPhoto.png" alt="" width={340} height={300} quality={100} className=" relative rounded-3xl " ></Image>
-            <div className="h-[190px] w-[180px]  ss:h-[200px] ss:w-[185px]     sm:h-[290px] sm:w-[280px]      md:h-[348px] md:w-[335px] lg:h-[360px] lg:w-[345px] xl:h-[359px] xl:w-[346px] border-8 border-blue-400 rounded-3xl absolute -top-4 left-0 bg-transparent"  ></div>
+            <div className="h-[185px] w-[180px]  ss:h-[200px] ss:w-[185px]     sm:h-[290px] sm:w-[280px]      md:h-[348px] md:w-[335px] lg:h-[360px] lg:w-[345px] xl:h-[359px] xl:w-[346px] border-8 border-blue-400 rounded-3xl absolute -top-4 left-0 bg-transparent"  ></div>
           </div>
 
 
