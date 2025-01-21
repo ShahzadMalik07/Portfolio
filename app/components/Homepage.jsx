@@ -18,7 +18,7 @@ const Homepage = () => {
                             <p className="w-[435px] xl:w-[550px text-lg text-white/70 ">Passionate full-stack web developer with expertise in building dynamic, user-friendly applications. I work with both front-end and back-end technologies, I enjoy solving complex problems and delivering efficient, scalable solutions for web-based projects.</p></div>
 
                         <div className="mt-8 flex flex-col xl:flex-row gap-8 items-center">
-                            <Link download href={"/shahzadmalik.pdf"} >   <button className="bg-transparent px-10 py-2 border border-blue-500 rounded-full text-blue-500 flex items-center space-x-2  hover:bg-blue-500 hover:text-black hover:transition-all duration-500"><span>Download CV</span><FiDownload /></button> </Link>
+                            <Link download href={"/shahzadMalik.pdf"} >   <button className="bg-transparent px-10 py-2 border border-blue-500 rounded-full text-blue-500 flex items-center space-x-2  hover:bg-blue-500 hover:text-black hover:transition-all duration-500"><span>Download CV</span><FiDownload /></button> </Link>
 
 
 
