@@ -27,7 +27,7 @@ const education = [
   {time:"2022 - 2023", course:"Frontend Development", institute:"Sheriyans Coding School" },
   {time:"2021 - 2022", course:"Digital Marketing Course", institute:"Google" },
   {time:"2017 - 2020", course:"Graduate in Pol. Science and Economics", institute:"University Of Delhi" },
-  {time:"2017 - 2017", course:"Diploma in Computer Applications", institute:"NCPUL" },
+  {time:"2017 - 2017", course:"Diploma in Computer Applications", institute:"NIELIT"},
 
 ]
 
