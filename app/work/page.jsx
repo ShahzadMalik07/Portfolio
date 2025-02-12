@@ -67,6 +67,16 @@ const projects = [
     github: "https://github.com/ShahzadMalik07/Youtube",
     link: false
   },
+  {
+    num: "06",
+    title: "WordPress News Website",
+    category: "Frontend",
+    description: "Sportzilla is a custom WordPress theme designed to display all posts with a well-structured layout. It includes custom templates for category pages, single post pages, and author pages, ensuring a consistent and engaging user experience",
+    stack: [{ name: "ReactJs" }, { name: "Redux" }, { name: "Tailwind" }, { name: "Youtube API's" }],
+    image: "project6.png",
+    live: "https://vokoconstruction.us.tempcloudsite.com/",
+    link: true
+  },
 
 ]
 
