@@ -8,26 +8,26 @@ import {
   TooltipProvider,
   TooltipTrigger,
 } from "@/components/ui/tooltip"
-import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs, FaGitAlt, FaGithub, FaPython, FaAws, FaDocker } from 'react-icons/fa'
+import { FaHtml5, FaCss3, FaJs, FaReact, FaNodeJs, FaGitAlt, FaGithub, FaPython, FaAws, FaDocker, FaWordpress,FaPhp, FaJava  } from 'react-icons/fa'
 import { SiTailwindcss, SiNextdotjs, SiPostgresql, SiMongodb, } from "react-icons/si"
 
 import { ScrollArea } from '@/components/ui/scroll-area'
 
 const experience = [
-  {time:"2024 - Present", skill:"Fullstack Web Developer", company:"Freelance"},
-  {time:"2023 - 2024", skill:"Backend Developer", company:"Freelance"},
-  {time:"2022 - 2023", skill:"Frontend Developer", company:"Upwork"},
-  {time:"2022 - 2022", skill:"SEO", company:"Digital Marketing Agency"},
-  {time:"2021 - 2022", skill:"Logo Designer", company:"Digital Marketing Agency"},
+  { time: "2024 - Present", skill: "Fullstack Web Developer", company: "Freelance" },
+  { time: "2023 - 2024", skill: "Backend Developer", company: "Freelance" },
+  { time: "2022 - 2023", skill: "Frontend Developer", company: "Upwork" },
+  { time: "2022 - 2022", skill: "SEO", company: "Digital Marketing Agency" },
+  { time: "2021 - 2022", skill: "Logo Designer", company: "Digital Marketing Agency" },
 
 ]
 
-const education = [ 
-  {time:"2023 - 2024", course:"100x Devs Cohort", institute:"Harkirat Singh"},
-  {time:"2022 - 2023", course:"Frontend Development", institute:"Sheriyans Coding School" },
-  {time:"2021 - 2022", course:"Digital Marketing Course", institute:"Google" },
-  {time:"2017 - 2020", course:"Graduate in Pol. Science and Economics", institute:"University Of Delhi" },
-  {time:"2017 - 2017", course:"Diploma in Computer Applications", institute:"NIELIT"},
+const education = [
+  { time: "2023 - 2024", course: "100x Devs Cohort", institute: "Harkirat Singh" },
+  { time: "2022 - 2023", course: "Frontend Development", institute: "Sheriyans Coding School" },
+  { time: "2021 - 2022", course: "Digital Marketing Course", institute: "Google" },
+  { time: "2017 - 2020", course: "Graduate in Pol. Science and Economics", institute: "University Of Delhi" },
+  { time: "2017 - 2017", course: "Diploma in Computer Applications", institute: "NIELIT" },
 
 ]
 
@@ -39,11 +39,14 @@ const skills = [
   { name: "React js", icons: <FaReact /> },
   { name: "Next js", icons: <SiNextdotjs /> },
   { name: "Node js", icons: <FaNodeJs /> },
+  { name: "Wordpress", icons: <FaWordpress /> },
+  { name: "PHP", icons: <FaPhp  /> },
   { name: "Postgres", icons: <SiPostgresql /> },
   { name: "MongoDb", icons: <SiMongodb /> },
   { name: "Git", icons: <FaGitAlt /> },
   { name: "Github", icons: <FaGithub /> },
   { name: "Python", icons: <FaPython /> },
+  { name: "JAVA", icons: <FaJava /> },
   { name: "AWS", icons: <FaAws /> },
   { name: "Docker", icons: <FaDocker /> },
 
@@ -51,13 +54,13 @@ const skills = [
 ]
 
 const about = [
-  {fieldname:"Name", fieldvalue:"Shahzad Malik"},
-  {fieldname:"Phone", fieldvalue:"+91-9690426644"},
-  {fieldname:"Experience", fieldvalue:"3+ Years"},
-  {fieldname:"Email", fieldvalue:"Shahzadmalik425@gmail.com"},
-  {fieldname:"Nationality", fieldvalue:"Indian"},
-  {fieldname:"Languages", fieldvalue:"English, Hindi, urdu"},
-  {fieldname:"Freelance", fieldvalue:"Available"},
+  { fieldname: "Name", fieldvalue: "Shahzad Malik" },
+  { fieldname: "Phone", fieldvalue: "+91-9690426644" },
+  { fieldname: "Experience", fieldvalue: "3+ Years" },
+  { fieldname: "Email", fieldvalue: "Shahzadmalik425@gmail.com" },
+  { fieldname: "Nationality", fieldvalue: "Indian" },
+  { fieldname: "Languages", fieldvalue: "English, Hindi, urdu" },
+  { fieldname: "Freelance", fieldvalue: "Available" },
 
 
 ]
@@ -85,19 +88,19 @@ const Resume = () => {
               </div>
               <ScrollArea className='h-[330px] mt-6'>
                 <ul className='grid grid-cols-1 xl:grid-cols-2 gap-5'>
-                  {experience.map((item,index)=>{
-                    return   <li key={index} className='bg-gray-900 h-[150px] py-6 px-10 rounded-xl flex flex-col justify-center items-center gap-3'>
-                    <span className='text-blue-500'>{item.time}</span>
-                    <h3 className='text-xl max-w-[260px] min-h-[60px] text-center lg:text-left'>{item.skill}</h3>
-                    <div className='flex items-center gap-2'>
-                      <span className='h-[6px] w-[6px] rounded-full bg-blue-500'></span>
-                      <p className='text-white/60'>{item.company}</p>
-                    </div>
-                  </li>
+                  {experience.map((item, index) => {
+                    return <li key={index} className='bg-gray-900 h-[150px] py-6 px-10 rounded-xl flex flex-col justify-center items-center gap-3'>
+                      <span className='text-blue-500'>{item.time}</span>
+                      <h3 className='text-xl max-w-[260px] min-h-[60px] text-center lg:text-left'>{item.skill}</h3>
+                      <div className='flex items-center gap-2'>
+                        <span className='h-[6px] w-[6px] rounded-full bg-blue-500'></span>
+                        <p className='text-white/60'>{item.company}</p>
+                      </div>
+                    </li>
                   })}
-                
 
-                  
+
+
                 </ul>
 
               </ScrollArea>
@@ -111,19 +114,19 @@ const Resume = () => {
               </div>
               <ScrollArea className='h-[330px] mt-6'>
                 <ul className='grid grid-cols-1 xl:grid-cols-2 gap-5'>
-                  {education.map((item,index)=>{
-                    return  <li key={index} className='bg-gray-900 h-[150px] py-6 px-8 rounded-xl flex flex-col justify-center items-center gap-3'>
-                    <span className='text-blue-500'>{item.time}</span>
-                    <h3 className='text-xl max-w-[300px] min-h-[60px] text-center'>{item.course}</h3>
-                    <div className='flex items-center gap-2'>
-                      <span className='h-[6px] w-[6px] rounded-full bg-blue-500'></span>
-                      <p className='text-white/60'>{item.institute}</p>
-                    </div>
-                  </li>
+                  {education.map((item, index) => {
+                    return <li key={index} className='bg-gray-900 h-[150px] py-6 px-8 rounded-xl flex flex-col justify-center items-center gap-3'>
+                      <span className='text-blue-500'>{item.time}</span>
+                      <h3 className='text-xl max-w-[300px] min-h-[60px] text-center'>{item.course}</h3>
+                      <div className='flex items-center gap-2'>
+                        <span className='h-[6px] w-[6px] rounded-full bg-blue-500'></span>
+                        <p className='text-white/60'>{item.institute}</p>
+                      </div>
+                    </li>
                   })}
-                 
 
-                 
+
+
                 </ul>
 
               </ScrollArea>
@@ -169,19 +172,19 @@ const Resume = () => {
               <div className='flex flex-col  gap-[30px]'>
                 <div className='flex flex-col text-center xl:text-start gap-[30px]'>
                   <h3 className='text-4xl font-bold'>About Me</h3>
-                  
+
                 </div>
                 <ul className='grid grid-cols-1 xl:grid-cols-2 gap-y-6 max-w-[820px]'>
-                 {about.map((about,index)=>{
-                  return  <li key={index} className='flex items-center justify-center xl:justify-start gap-4'>
-                  <span className='text-white/60'>{about.fieldname}</span>
-                  <span className='text-xl'>{about.fieldvalue}</span>
-                  </li>
-                 })}
+                  {about.map((about, index) => {
+                    return <li key={index} className='flex items-center justify-center xl:justify-start gap-4'>
+                      <span className='text-white/60'>{about.fieldname}</span>
+                      <span className='text-xl'>{about.fieldvalue}</span>
+                    </li>
+                  })}
 
-                
-                  
-                
+
+
+
                 </ul>
               </div>
             </TabsContent>

@@ -71,9 +71,10 @@ const projects = [
     num: "06",
     title: "WordPress News Website",
     category: "Frontend",
-    description: "Sportzilla is a custom WordPress theme designed to display all posts with a well-structured layout. It includes custom templates for category pages, single post pages, and author pages, ensuring a consistent and engaging user experience",
-    stack: [{ name: "ReactJs" }, { name: "Redux" }, { name: "Tailwind" }, { name: "Youtube API's" }],
-    image: "project6.png",
+    description: "Bollywoodery is a custom WordPress theme designed to display all posts with a well-structured layout. It includes custom templates for category pages, single post pages, and author pages, ensuring a consistent and engaging user experience. Features-> Custom category.php for category-wise post display, single.php for detailed post view, author.php for author-specific posts, Fully responsive and optimized design",
+    stack: [{ name: "Wordpress" }, { name: "PHP" }, { name: "MYSQL" }],
+    image: "/project6.png",
+    github: "https://github.com/ShahzadMalik07/",
     live: "https://vokoconstruction.us.tempcloudsite.com/",
     link: true
   },
